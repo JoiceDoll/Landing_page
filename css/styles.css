@@ -197,7 +197,8 @@
   padding: 2rem 0;
 }
 
-.section_four_title {
+.section_four_title,
+.section_five_title {
   width: 100%;
   height: 20%;
   text-align: center;
@@ -225,4 +226,29 @@
     font-size: 1.2rem;
     text-align: center;
   }
+}
+
+.section_five {
+  width: 100%;
+  height: 30rem;
+  border-bottom: 1px solid #1b1b1b;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  padding: 15%;
+}
+
+.project_one,
+.project_two {
+  width: 50%;
+  height: 100%;
+  background: #141313;
+  padding: 3rem;
+}
+
+.projects {
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
 }
