@@ -12,13 +12,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/cakeshop.css"
+      href="css/styles.css"
       media="screen"
     />
     <link
       rel="stylesheet"
       type="text/css"
-      href="css/global.css"
+      href="../css/global.css"
       media="screen"
     />
     <title>Cake shop</title>
@@ -37,8 +37,8 @@
       </header>
     </nav>
     <main>
-      <img
-        src="/assets/svg/whatsapp.svg"
+      <!-- <img
+        src="../assets/svg/whatsapp.svg"
         alt="icone whatsapp"
         style="
           width: 150px;
@@ -47,13 +47,13 @@
           bottom: 0;
           right: 0;
         "
-      />
+      /> -->
       <session class="session_one">
         <div class="banner-title">
           <h1>Bolos e Doces</h1>
         </div>
         <div class="banner_image">
-          <img loading="lazy" alt="banner" src="assets/jpg/capa.jpg" />
+          <img loading="lazy" alt="banner" src="../assets/jpg/capa.jpg" />
         </div>
       </session>
       <session class="session_two">
@@ -64,17 +64,17 @@
 
         <div class="gallery">
           <div class="gallery_item">
-            <img src="/assets/jpg/bolo.jpg" alt="Bolos" />
+            <img src="../assets/jpg/bolo.jpg" alt="Bolos" />
             <p>Bolos</p>
           </div>
           <div class="gallery_item">
-            <img class="gallery_item" src="/assets/jpg/doce.jpg" alt="Doces" />
+            <img class="gallery_item" src="../assets/jpg/doce.jpg" alt="Doces" />
             <p>Doces</p>
           </div>
           <div class="gallery_item">
             <img
               class="gallery_item"
-              src="/assets/jpg/cupcake.jpg"
+              src="../assets/jpg/cupcake.jpg"
               alt="Cupcakes"
             />
             <p>Cupcakes</p>
@@ -84,54 +84,53 @@
       <session class="session_three">
         <div class="grid_services">
           <div class="grid_service_item">
-            <img loading="lazy" src="/assets/jpg/cake.jpg" alt="bolo" />
+            <img loading="lazy" src="../assets/jpg/cake.jpg" alt="bolo" />
           </div>
           <div class="grid_service_item">
-            <p>Nossa história</p>
+            <p class="grid_title">Nossa história</p>
             <p>Um pouco sobre a nossa história</p>
           </div>
           <div class="grid_service_item">
-            <img src="/assets/jpg/americancake.jpg" alt="bolo americano" />
+            <img src="../assets/jpg/americancake.jpg" alt="bolo americano" />
           </div>
           <div class="grid_service_item">
-            <p>Contato</p>
+            <p class="grid_title">Contato</p>
             <p>Fale conosco através do whatsapp</p>
           </div>
           <div class="grid_service_item">
-            <img src="/assets/jpg/petit.jpg" alt="petit gateau" />
+            <img src="../assets/jpg/limecake.jpg" alt="bolo de limão" />
+          </div>
+          <div class="grid_service_item">
+            <p class="grid_title">Onde estamos</p>
+            <p>Fale conosco através do whatsapp</p>
           </div>
         </div>
       </session>
       <session class="session_four">
-        <div class="footer_content">
-          <div class="payments_icon">
-            <div class="payment_content">
-              <div style="width: 80px; height: 80px; display: flex">
-                <img
-                  loading="lazy"
-                  alt="cartao de crédito"
-                  src="/assets/creditcard.svg"
-                />
-              </div>
-              <p>Aceitamos cartão de crédito</p>
-            </div>
-
-            <div class="payment_content">
-              <div style="width: 80px; height: 80px; display: flex">
-                <img
-                  loading="lazy"
-                  alt="parcelamento"
-                  src="/assets/money.svg"
-                />
-              </div>
-              <p>Parcelamento</p>
-            </div>
+        <div class="history">
+          <div class="history_text">
+            <h2>Nossa história</h2>
+            <p>sobre nós</p>
           </div>
-          <div class="address">
-            <p>Rua teste, 1708, Criciúma, Sc</p>
+          <div class="history_banner">
+            <img
+              src="../assets/jpg/history_banner.jpg"
+              alt="Bolo banner"
+              loading="lazy"
+            />
           </div>
         </div>
       </session>
+      <session class="session_five">
+        <h2>Onde estamos</h2>
+        <div class="map">
+          <img
+            src="https://www.google.com/maps/about/images/mymaps/mymaps-desktop-16x9.png"
+            alt="maps"
+          />
+        </div>
+      </session>
+      <footer class="footer"></footer>
     </main>
   </body>
 </html>
