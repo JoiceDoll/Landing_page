@@ -27,23 +27,16 @@ h2 {
   padding: 1rem 0;
 }
 
-ul {
-  list-style: none;
-  display: flex;
-  justify-content: space-evenly;
-  width: 40%;
-  color: #1a120f;
-  cursor: pointer;
-}
-
 .header {
   width: 100%;
   height: 5rem;
   display: flex;
-  justify-content: space-around;
+  gap: 100px;
   align-items: center;
-  background: #ffffff;
+  background: #fff;
   position: fixed;
+  justify-content: space-between;
+  padding: 0 30px;
   top: 0;
   left: 0;
   z-index: 2;
@@ -51,12 +44,18 @@ ul {
 
 .header button {
   background: #1a120f;
-  width: 130px;
+  padding: 15px 45px;
   border: none;
   cursor: pointer;
-  height: 40px;
   border-radius: 5px;
   color: #d6cdc9;
+}
+
+.header_item {
+  width: 60%;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
 }
 
 .session_one,
@@ -191,11 +190,12 @@ ul {
 .history_banner {
   width: 100%;
   height: 400px;
-
-  img {
-    width: 100%;
-    opacity: 0.5;
-  }
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)),
+    url("../../assets/jpg/history_banner.jpg");
+  background-position: center;
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
 }
 
 .map {
@@ -210,7 +210,7 @@ ul {
   margin-top: 4rem;
 }
 
-@media (max-width: 600px) {
+@media (max-width: 576px) {
   .grid_services {
     grid-template-columns: 1fr 1fr;
     width: 100%;
@@ -225,5 +225,13 @@ ul {
   .gallery_item {
     width: 120px;
     height: 120px;
+  }
+
+  .header_item {
+    width: 80%;
+  }
+
+  .header {
+    gap: 50px;
   }
 }
