@@ -3,163 +3,53 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/styles.css"
-      media="screen"
-    />
-    <link
-      rel="stylesheet"
-      type="text/css"
-      href="css/global.css"
-      media="screen"
-    />
-    <title>Document</title>
+    <link rel="stylesheet" type="text/css" href="css/styles.css" />
+    <link rel="stylesheet" type="text/css" href="css/global.css" />
+    <title>Nosso portifólio</title>
   </head>
   <body>
     <nav>
       <header class="header">
-        <div id="logotype">Logo</div>
-        <ul
-          style="
-            list-style: none;
-            display: flex;
-            justify-content: space-evenly;
-            width: 40%;
-            color: #ffffff;
-            cursor: pointer;
-          "
-        >
-          <li>Sobre</li>
-          <li>Projetos</li>
-        </ul>
-        <div id="header_button">
+        <!-- Pegar alguma imagem posteriormente para logo -->
+        <p style="color: #276df1; font-size: 2.1rem">Logo</p>
+        <div class="header_item">
+          <a href="/">Sobre</a>
+          <a href="/">Projetos</a>
           <button type="button">Contato</button>
         </div>
       </header>
     </nav>
     <main>
-      <section class="section_one">
-        <div class="section_one_content">
-          <h1>Colocamos seu negócio no <span>mapa</span>!</h1>
-          <p>Colocamos seu negócio no mapa.</p>
-          <div class="group_section_one_button">
-            <button type="button">Fazer orçamento</button>
-            <button type="button">Quem somos</button>
-          </div>
+      <section class="section" id="section_one">
+        <h1>Colocamos seu negócio no <span>mapa</span>!</h1>
+        <p>Colocamos seu negócio no mapa.</p>
+        <div class="container_button">
+          <button type="button" id="budget">Fazer orçamento</button>
+          <button type="button" id="about">Quem somos</button>
         </div>
-        <img loading="lazy" alt="capa" src="./assets/capa.svg" />
       </section>
-      <section class="section_two">
-        <div class="session_two_title">
-          <p i>Como vamos <span>alavancar</span> seu<span> negócio</span>.</p>
-        </div>
+      <section class="section" id="section_two">
+        <h2>Como vamos <span>alavancar</span> seu <span>negócio?</span></h2>
 
-        <div class="info_container">
-          <div class="line_one">
-            <div class="line_content">
-              <p>
-                Landing <br />
-                pages
-              </p>
-            </div>
-            <div id="computer_logo_container">
-              <img
-                src="./assets/computer.svg"
-                alt="Computer logo"
-                loading="lazy"
-              />
+        <div class="section_two_content">
+          <div class="landing_page">
+            <p>Landing pages</p>
+            <div class="computer_icon">
+              <img src="./assets/svg/computer.svg" alt="" />
             </div>
           </div>
-          <div class="line_two">
-            <div id="computer_logo_container">
-              <img src="./assets/phone.svg" alt="Phone logo" loading="lazy" />
+
+          <div class="ui_ux">
+            <div class="ux_icon">
+              <img src="./assets/svg/phone.svg" alt="" />
             </div>
-            <div class="line_content">
-              <p>UI/ UX</p>
-            </div>
+            <p>ui /ux</p>
           </div>
         </div>
       </section>
-      <section class="section_three">
-        <div class="background_section_three"></div>
-        <img
-          loading="lazy"
-          alt="Missão"
-          src="./assets/mission.svg"
-          id="mission_img"
-        />
-        <div class="mission_content">
-          <p style="font-size: 1.8rem; color: #276df1; padding-bottom: 10px">
-            Missão
-          </p>
-          <p style="color: #777777; font-size: 1.5rem">
-            Nosso propósito é impulsionar seu sucesso através de soluções
-            digitais inovadoras e personalizadas.
-          </p>
-        </div>
-      </section>
-      <section class="section_four">
-        <div class="section_four_title">
-          <p style="font-size: 1.9rem; color: #276df1; padding-bottom: 10px">
-            Estapas
-          </p>
-          <p style="color: #777777; font-size: 1.2rem">Como trabalhamos</p>
-        </div>
-        <div class="section_four_phases">
-          <img
-            loading="lazy"
-            src="./assets/phases.svg"
-            alt="Etapas"
-            style="width: 100%; height: 90%"
-          />
-        </div>
-      </section>
-      <section class="section_five">
-        <div class="section_five_title">
-          <p style="font-size: 1.9rem; color: #276df1; padding-bottom: 10px">
-            Projetos
-          </p>
-          <p style="color: #777777; font-size: 1.2rem">De nossos clientes</p>
-        </div>
-        <div class="projects">
-          <div class="project_one">
-            <img
-              loading="lazy"
-              alt="Página personal"
-              src="./assets/academy.png"
-              style="width: 100%; height: 100%"
-            />
-          </div>
-          <div class="project_two">
-            <a href="cakeshop/">
-              <img
-                loading="lazy"
-                alt="Página personal"
-                src="./assets/thestartdev.png"
-                style="width: 100%; height: 100%"
-              />
-            </a>
-          </div>
-        </div>
-        <button type="button">Outros projetos</button>
-      </section>
-      <footer class="footer">
-        <div class="footer_logo"><p>Logo</p></div>
-        <div class="footer_about">
-          <div class="services">
-            <p style="color: #8e8e8e; font-size: 1.3rem">Serviços</p>
-            <p style="color: #ffffff">Prototipagem</p>
-            <p style="color: #ffffff">Desenvolvimento</p>
-            <p style="color: #ffffff">Hospedagem</p>
-          </div>
-          <div class="contact">
-            <p style="color: #8e8e8e; font-size: 1.3rem">Fale conosco</p>
-            <p style="color: #ffffff">contato@nome.com.br</p>
-          </div>
-        </div>
-      </footer>
+      <section class="section"></section>
+      <section class="section"></section>
+      <section class="section"></section>
     </main>
   </body>
 </html>
