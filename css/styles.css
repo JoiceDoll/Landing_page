@@ -18,7 +18,7 @@ img {
   height: 100%;
 }
 
-.header {
+.nav {
   width: 100%;
   background-color: transparent;
   display: flex;
@@ -28,7 +28,7 @@ img {
   align-items: center;
 }
 
-.header button {
+.nav button {
   padding: 15px 45px;
   background: #276df1;
   color: #fff;
@@ -47,8 +47,8 @@ img {
 }
 
 .section {
-  height: 35rem;
   width: 100%;
+  height: 35rem;
   margin-bottom: 5rem;
 }
 
@@ -125,13 +125,14 @@ img {
   height: 50%;
   display: grid;
   grid-template-columns: 1fr 1fr;
+  align-items: center;
 }
 
 .landing_page p,
 .ui_ux p {
   font-size: 1.4rem;
   text-align: center;
-  margin-top: 70px;
+  vertical-align: center;
   color: #276df1;
 }
 
@@ -146,16 +147,19 @@ img {
 
 .section_three_content {
   display: flex;
-  gap: 320px;
+  gap: 250px;
   width: 100%;
+  padding: 0 30px;
 }
 
 .shadow {
   width: 300px;
   height: 350px;
-  margin-left: 200px;
+  margin-left: 150px;
   background: #141313;
   border-radius: 10px;
+  min-width: 250px;
+  min-height: 300px;
 }
 
 #mission_image {
@@ -170,7 +174,8 @@ img {
   text-align: start;
 }
 
-.section_four_content {
+.section_four_content,
+.section_five_content {
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -182,7 +187,6 @@ img {
 .phases {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  gap: 150px;
   margin-top: 30px;
   width: 100%;
 }
@@ -208,13 +212,152 @@ img {
   margin-top: 60px;
 }
 
+.project_item {
+  display: flex;
+  justify-content: center;
+  gap: 50px;
+  margin-top: 50px;
+}
+
+.project_background {
+  width: 40%;
+  height: 80%;
+  background: #141313;
+  padding: 30px;
+  border-radius: 4px;
+  cursor: pointer;
+
+  img {
+    max-width: 100%;
+    max-height: 100%;
+  }
+}
+
+.section_five_content button {
+  padding: 15px 45px;
+  background: #276df1;
+  color: #fff;
+  text-transform: uppercase;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+.last_section {
+  width: 100%;
+  gap: 50px;
+  margin-top: 450px;
+  display: grid;
+  grid-template-columns: 2fr 1fr 1fr;
+  padding: 50px 50px;
+}
+
+.last_section ul {
+  color: #777777;
+  font-size: 1.2rem;
+  list-style: none;
+  margin-top: 30px;
+  line-height: 1.3;
+}
+
+.footer {
+  width: 100%;
+  color: #8e8e8e;
+  padding: 30px 0;
+  border-top: 1px solid #1b1b1b;
+  display: flex;
+  justify-content: center;
+}
+
 @media only screen and (max-width: 576px) {
   .header p {
     font-size: 0.5rem;
   }
 
   #section_one {
-    padding: 80px 100px;
+    padding: 5px 100px;
+  }
+
+  .section {
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 5rem;
+  }
+
+  #section_two {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid #1b1b1b;
+    height: 50rem;
+  }
+
+  #section_two h2 {
+    padding: 50px 120px;
+  }
+
+  .section_three_content {
+    display: flex;
+    flex-direction: column;
+    gap: 320px;
+    width: 100%;
+  }
+  .phases {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .last_section {
+    width: 100%;
+    gap: 10px;
+    margin-top: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px 100px;
+  }
+
+  .shadow {
+    display: none;
+  }
+
+  .mission {
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .section_three_content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #section_four {
+    height: 60rem;
+  }
+
+  .project_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .project_background {
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+  }
+
+  .services {
+    margin-bottom: 30px;
   }
 }
 
@@ -235,5 +378,95 @@ img {
   #section_one p {
     color: #fff;
     font-size: 1.5rem;
+  }
+
+  .header p {
+    font-size: 0.5rem;
+  }
+
+  .section {
+    width: 100%;
+    height: 35rem;
+    margin-bottom: 5rem;
+  }
+
+  #section_two {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr;
+    border-bottom: 1px solid #1b1b1b;
+    height: 50rem;
+  }
+
+  #section_two h2 {
+    padding: 50px 120px;
+  }
+
+  .section_three_content {
+    display: flex;
+    flex-direction: column;
+    gap: 320px;
+    width: 100%;
+  }
+  .phases {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    margin-top: 30px;
+    width: 100%;
+  }
+
+  .last_section {
+    width: 100%;
+    gap: 10px;
+    margin-top: 450px;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    padding: 50px 100px;
+  }
+
+  .shadow {
+    display: none;
+  }
+
+  .mission {
+    width: 100%;
+    padding: 0 50px;
+    text-align: center;
+  }
+
+  .section_three_content {
+    height: 100%;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  #section_four {
+    height: 60rem;
+  }
+
+  .project_item {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 50px;
+  }
+
+  .project_background {
+    width: 90%;
+    height: 90%;
+    padding: 15px;
+  }
+
+  .services {
+    margin-bottom: 30px;
+  }
+
+  #section_five {
+    height: 50rem;
   }
 }
