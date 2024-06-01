@@ -1,3 +1,5 @@
+@import url("../../css/animations.css");
+
 body {
   background: #ffffff;
   font-weight: 400;
@@ -68,6 +70,18 @@ h2 {
   align-items: center;
   justify-content: center;
   flex-direction: column;
+}
+
+.session_two {
+  animation: slideUp 1s;
+}
+
+.session_three {
+  animation: slideSide 1s;
+}
+
+.session_five {
+  animation: scaleUp 1s;
 }
 
 .session_four {
@@ -162,6 +176,11 @@ h2 {
   }
 }
 
+.grid_service_item:hover {
+  scale: 1.1;
+  transition: scale 0.5s;
+}
+
 .grid_title {
   font-size: 1.5rem;
   color: #1a120f;
@@ -211,6 +230,14 @@ h2 {
 }
 
 @media (max-width: 576px) {
+  .session_one {
+    animation: scaleUp 1s;
+  }
+
+  .map {
+    width: 90%;
+  }
+
   .grid_services {
     grid-template-columns: 1fr 1fr;
     width: 100%;

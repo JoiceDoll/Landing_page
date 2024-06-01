@@ -26,10 +26,11 @@
   <body>
     <nav>
       <header class="header">
-        <div id="logotype">CakeShop</div>
+        <div id="logotype"><a href="index.html">CakeShop</a></div>
         <div class="header_item">
-          <a href="/">Nosso trabalho</a>
-          <a href="/">Quem somos</a>
+          <a href="#session_two">Nosso trabalho</a>
+          <a href="#session_three">Quem somos</a>
+          <a href="#session_five">Onde estamos</a>
           <button type="button">Contato</button>
         </div>
       </header>
@@ -54,7 +55,7 @@
           <img loading="lazy" alt="banner" src="../assets/jpg/capa.jpg" />
         </div>
       </session>
-      <session class="session_two">
+      <session class="session_two" id="session_two">
         <div class="about_us">
           <h2>O que fazemos</h2>
           <p>Possuimos um cardápio variado para atender as suas necessidades</p>
@@ -85,7 +86,7 @@
           </div>
         </div>
       </session>
-      <session class="session_three">
+      <session class="session_three" id="session_three">
         <div class="grid_services">
           <div class="grid_service_item">
             <img loading="lazy" src="../assets/jpg/cake.jpg" alt="bolo" />
@@ -114,12 +115,18 @@
         <div class="history">
           <div class="history_text">
             <h2>Nossa história</h2>
-            <p>sobre nós</p>
+            <p>
+              A Doce Encanto, fundada em 1985 por Dona Maria, transformou
+              receitas familiares em delícias artesanais que conquistaram
+              corações. Com tradição e inovação, continuamos a adoçar vidas,
+              oferecendo doces que remetem à infância e momentos inesquecíveis.
+              Venha provar a tradição e o sabor em cada mordida!
+            </p>
           </div>
           <div class="history_banner"></div>
         </div>
       </session>
-      <session class="session_five">
+      <session class="session_five" id="session_five">
         <h2>Onde estamos</h2>
         <div class="map">
           <img
@@ -131,4 +138,5 @@
       <footer class="footer"></footer>
     </main>
   </body>
+  <script src="js/index.js"></script>
 </html>
