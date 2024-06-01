@@ -1,3 +1,5 @@
+@import url("./animations.css");
+
 body {
   background: #000000;
   font-family: "Inter", sans-serif !important;
@@ -22,6 +24,15 @@ img {
   height: 100%;
 }
 
+#navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  backdrop-filter: saturate(180%) blur(20px);
+  z-index: 99;
+}
+
 .nav {
   width: 100%;
   background-color: transparent;
@@ -41,33 +52,46 @@ img {
   border-radius: 4px;
 }
 
-.nav button:hover,
-#budget:hover {
-  background: #578aeb;
-}
-
 .header_item {
   width: 50%;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  gap: 40px;
   color: #b0a2a2;
+}
+
+.header_item a {
+  font-size: 14pt;
+}
+
+.header_item a:hover {
+  color: #fff;
+  cursor: pointer;
+  transition: color 0.2s;
 }
 
 .section {
   width: 100%;
   height: 35rem;
-  margin-bottom: 5rem;
+  margin-bottom: 3rem;
 }
 
 #section_one {
   background-image: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.2)),
-    url("../assets/svg/capa.svg");
+    url("../assets/png/header_logo.png");
   background-position: center;
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-size: cover;
   padding: 150px 100px;
+  margin-top: 20px;
+}
+
+#section_one > h1,
+#section_one > p,
+#section_one > .container_button {
+  animation: slideUp 1s;
 }
 
 #section_one h1 {
@@ -77,8 +101,9 @@ img {
 
 #section_one p {
   color: #fff;
-  font-size: 2rem;
+  font-size: 1.5rem;
   line-height: 1.7;
+  margin-top: 8px;
 }
 
 .container_button {
@@ -93,26 +118,37 @@ img {
 }
 
 #budget {
-  background: #276df1;
+  background: rgb(39, 109, 241);
   border: none;
+  font-size: 14pt;
+  transition: background 1s;
+  border-radius: 4px;
+}
+
+#budget:hover {
+  background: rgba(39, 109, 241, 0.4);
+  transition: background 0.3s;
 }
 
 #about {
   border: 1px solid #276df1;
   background-color: transparent;
   transition: 0.2s;
+  font-size: 14pt;
 }
 
 #about:hover {
-  letter-spacing: 0.1rem;
-  border: 2px solid #276df1;
+  background: rgba(39, 109, 241, 0.4);
+  transition: 0.2s;
 }
 
 #section_two {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   gap: 10px;
   border-bottom: 1px solid #1b1b1b;
+  animation: slideUp 1s;
 }
 
 #section_four,
@@ -123,8 +159,7 @@ img {
 #section_two h2 {
   color: #fff;
   font-size: 2.3rem;
-  text-align: center;
-  padding: 150px 120px;
+  text-align: left;
 }
 
 .section_two_content {
@@ -132,6 +167,7 @@ img {
   display: flex;
   flex-direction: column;
   gap: 50px;
+  animation: slideUp 1s;
 }
 
 .landing_page,
@@ -157,7 +193,7 @@ img {
   display: flex;
   place-content: center;
   padding: 20px;
-  width: 230px;
+  width: 200px;
   height: 150px;
 }
 
@@ -209,6 +245,9 @@ img {
 
 .phases_item {
   padding: 0 30px;
+  animation: slideSide 1s;
+  /* animation-timeline: scroll(); */
+  /* animation-range: cover 0% cover 50%; */
 }
 
 .phases_item h3 {
@@ -242,11 +281,19 @@ img {
   padding: 30px;
   border-radius: 4px;
   cursor: pointer;
+  opacity: 0.6;
+  animation: opacityScale 1s;
 
   img {
     max-width: 100%;
     max-height: 100%;
   }
+}
+
+.project_background:hover {
+  opacity: 1;
+  scale: 1.1;
+  transition: opacity 0.5s ease-in-out, scale 0.5s ease-in-out;
 }
 
 .section_five_content button {
@@ -262,7 +309,7 @@ img {
 .last_section {
   width: 100%;
   gap: 50px;
-  margin-top: 450px;
+  margin-top: 300px;
   display: grid;
   grid-template-columns: 2fr 1fr 1fr;
   padding: 50px 50px;
@@ -285,13 +332,19 @@ img {
   justify-content: center;
 }
 
+.services ul {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @media only screen and (max-width: 576px) {
   .header p {
     font-size: 0.5rem;
   }
 
   #section_one {
-    padding: 5px 100px;
+    padding: 5px 50px;
   }
 
   .section {
@@ -383,7 +436,7 @@ img {
   }
 
   #section_one {
-    padding: 120px 100px;
+    padding: 120px 50px;
   }
 
   #section_one h1 {
@@ -484,5 +537,9 @@ img {
 
   #section_five {
     height: 50rem;
+  }
+
+  .container_button {
+    flex-direction: column;
   }
 }
