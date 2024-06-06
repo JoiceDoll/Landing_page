@@ -72,18 +72,6 @@ h2 {
   flex-direction: column;
 }
 
-.session_two {
-  animation: slideUp 1s;
-}
-
-.session_three {
-  animation: slideSide 1s;
-}
-
-.session_five {
-  animation: scaleUp 1s;
-}
-
 .session_four {
   margin-top: 7rem;
   width: 100%;
@@ -105,9 +93,29 @@ h2 {
   }
 }
 
+#menu_button {
+  background: #fff;
+  padding: 15px 45px;
+  border: none;
+  cursor: pointer;
+  border-radius: 5px;
+  color: #000;
+}
+
+#menu_button:hover {
+  background: #1a120f;
+  color: #fff;
+  transition: background 0.5s;
+}
+
 .banner-title {
   position: absolute;
   z-index: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  gap: 15px;
 }
 
 .gallery {
@@ -116,10 +124,6 @@ h2 {
   align-items: center;
   display: flex;
   justify-content: space-evenly;
-
-  p {
-    text-align: center;
-  }
 }
 
 .about_us {
@@ -136,16 +140,11 @@ h2 {
   width: 200px;
   height: 200px;
   border-radius: 50%;
-
-  img {
-    border-radius: 50%;
-  }
-
-  p {
-    font-size: 1.3rem;
-    padding: 10px 0;
-    color: #1a120f;
-  }
+}
+.gallery_item p {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 1.3rem;
 }
 
 .grid_services {
@@ -253,10 +252,6 @@ h2 {
 }
 
 @media (max-width: 576px) {
-  .session_one {
-    animation: scaleUp 1s;
-  }
-
   .map {
     width: 90%;
   }
