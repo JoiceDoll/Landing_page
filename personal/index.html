@@ -6,9 +6,11 @@
     <title>Personal Trainer</title>
     <link rel="stylesheet" type="text/css" href="css/styles.css" />
     <link rel="stylesheet" type="text/css" href="../css/global.css" />
+
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
   </head>
   <body>
-
     <nav>
       <header class="header">
         <a href="#form_contact">Sobre</a>
@@ -21,7 +23,9 @@
           <div class="personal_banner">
             <div class="text_personal_banner">
               <h1>TENHA UM PERSONAL TRAINER</h1>
-              <div style="display: flex;"><button type="button">Saiba mais</button></div>
+              <div style="display: flex">
+                <button type="button">Saiba mais</button>
+              </div>
             </div>
           </div>
         </session>
@@ -30,7 +34,10 @@
           <div class="session_two_flex">
             <div class="image_container">
               <div class="shadow_image_container">
-                <div class="image_session_two_container">
+                <div
+                  class="image_session_two_container"
+                  id="image_session_two_container"
+                >
                   <img
                     loading="lazy"
                     src="../assets/jpg/personal_session_two.jpg"
@@ -39,7 +46,10 @@
                 </div>
               </div>
             </div>
-            <div class="text_session_two_container">
+            <div
+              class="text_session_two_container"
+              id="text_session_two_container"
+            >
               <h2>
                 Ajuste seu corpo e obtenha um <span>equilibrio perfeito</span>
               </h2>
@@ -146,8 +156,8 @@
         <footer class="footer_session">
           <p>Siga-nos no <span> instagram</span>.</p>
         </footer>
-        
       </main>
     </nav>
   </body>
+  <script src="js/index.js"></script>
 </html>
